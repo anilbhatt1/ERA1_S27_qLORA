@@ -1,0 +1,24 @@
+# Finetuning with qlora strategy - Falcon 7B and Microsoft-phi2
+
+- **Notebook References**
+    - ERA1_s27_QLoRA_falcon7b_v0.ipynb
+        - To understand how fine-tuning can be done with qLORA on Falcon 7B model
+    - ERA1_s27_gpt_llm_trainer_llama2_7b_infer_v1.ipynb 
+        - Reference colab on generating data with GPT4 & fine-tuning on that data with qLORA
+    - ERA1_s27_QLoRA_falcon7b_infer_v2.ipynb
+        - Notebook where finetuned model is merged with original model and used for inferencing
+    - ERA1_s27_QLoRA_phi2_infer_v3.ipynb
+        - Notebook where **microsoft/phi-2** model is finetuned with **'timdettmers/openassistant-guanaco'** dataset. 
+        - Later this model is merged with original model and moved to HF models (Link given below).
+        - Then inference is done in Gradio after downloading this HF model
+    - ERA1_s27_oasst1_learn_v4.ipynb
+        - Reference notebook to explore oasst1 HF dataset
+- **Hugging Face Space link** : https://huggingface.co/spaces/neuralorbs/phi2-dialog-partner
+- **Hugging Face model link** : https://huggingface.co/anilbhatt1/phi2-oasst-guanaco-bf16-custom
+- **Credits** : 
+    - https://github.com/mshumer/gpt-llm-trainer -> Finetuning Falcon 7B on T4 
+    - https://www.youtube.com/watch?v=YVU5wAA6Txo&t=0s&ab_channel=code_your_own_AI -> Understanding PEFT & LORA
+    - https://www.youtube.com/watch?v=TPcXVJ1VSRI&ab_channel=code_your_own_AI -> Understanding qLORA
+    - https://github.com/brevdev/notebooks/blob/main/phi2-finetune-own-data.ipynb -> Finetuning Phi2
+    - https://huggingface.co/microsoft/phi-2 -> Hugging face phi2 model
+    - https://huggingface.co/datasets/timdettmers/openassistant-guanaco -> Hugging face dataset
